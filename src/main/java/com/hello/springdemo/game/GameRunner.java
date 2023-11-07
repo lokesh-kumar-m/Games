@@ -1,11 +1,11 @@
 package com.hello.springdemo.game;
 
-public class gameRunner
+public class GameRunner
 {
     //Mario game;
     private GamingConsole game;
 
-    public gameRunner(GamingConsole game) {
+    public GameRunner(GamingConsole game) {
         this.game=game;
     }
     public void run()
