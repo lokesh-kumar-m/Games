@@ -1,5 +1,8 @@
 package com.hello.springdemo.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner
 {
     //Mario game;
@@ -10,8 +13,6 @@ public class GameRunner
     }
     public void run()
     {
-        // TODO Auto-generated method stub
-        System.out.println("Runnig game"+game);
         game.up();
         game.left();
         game.right();
