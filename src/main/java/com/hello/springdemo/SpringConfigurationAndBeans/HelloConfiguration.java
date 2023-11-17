@@ -10,7 +10,7 @@ record Address(String line,String city) {};
 //0  to resolve multiple candidate beans error  
 public class HelloConfiguration
 {
-    @Bean
+    @Bean //Creating a Bean, upon calling will return a String "Mario"
     protected String name() {
         return "Mario";
     }

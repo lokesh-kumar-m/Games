@@ -1,5 +1,8 @@
 package com.hello.springdemo.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class pacman implements GamingConsole
 {
 
