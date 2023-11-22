@@ -1,5 +1,10 @@
 package com.hello.springdemo.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("ContraQualifier")//This is used to auto-wire a specific bean
 public class Contra implements GamingConsole
 {
     public void up() {
