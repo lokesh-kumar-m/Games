@@ -14,12 +14,12 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 @ComponentScan("com.hello.springdemo.game") /*Java would get confused in finding the bean Components 
 												Hence we need to give a location to find them */ 
-public class Game01Application { 
+public class AppLauncher { 
 	public static void main(String[] args) {
 	    
 	    try(var context =
                 new AnnotationConfigApplicationContext
-                    (Game01Application.class)){
+                    (AppLauncher.class)){
 	        context.getBean(GamingConsole.class).up(); 
 	        context.getBean(GameRunner.class).run();
 	    }
